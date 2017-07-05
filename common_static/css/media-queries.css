@@ -1,0 +1,259 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset,input {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-size:100%;
+	font-size:1em;
+	background:url(../img/logoBj.png) no-repeat;
+}
+
+#pagewrap{
+	width:385px;
+	margin: 94px auto auto auto;
+}
+
+#titles{
+	float:left;
+	width:100%;
+	height:163px;
+	line-height:163px;
+	text-align:center;
+	font-size:1.5em;
+	color:#FFF;
+}
+#content{
+	float:left;
+	position:relative;
+	width:100%;
+	height:521px;
+	border:1px solid #FFF;
+}
+
+#content_title{
+	width:100%;
+	height:105px;
+	line-height:105px;
+	height:auto;
+	font-size:1em;
+	text-align:center;
+	color:#FFF;
+}
+
+.box_all{
+	float:left;
+	width:343px;
+	height:auto;
+	margin-left:20px;
+}
+
+.box_all p{
+	display:block;
+	font-size:0.75em;
+	margin-bottom:14px;
+	color:#FFF;
+}
+
+.box_all_bottom_1{
+	margin-bottom:25px;
+}
+
+.box_all_bottom_2{
+	margin-bottom:33px;
+}
+	
+.box_input{
+	float:left;
+	width:100%;
+	height:44px;
+	line-height:44px;
+	position:relative;
+	
+}
+
+.box_input_bj{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background: #000;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 5px;
+	opacity:0.18;
+	-moz-opacity: 0.18; 
+	-khtml-opacity: 0.18; 
+	filter:alpha(opacity=18);
+	z-index:-999999;
+	border:1px solid #FFF;
+}
+
+.imgs,.inputs{
+	float:left;
+}
+.imgs{
+	width:67px;
+	height:100%;
+	text-align:center;
+	border-right:#bbb6af solid 1px;
+}
+
+.imgs img{
+	margin-top:10px;
+}
+.inputs{
+	width:273px;
+	height:100%;
+}
+
+.inputs input{
+	border:none;
+	background:none;
+	text-indent:30px;
+	width:276px;
+	height:100%;
+	color:#FFF;
+	
+	
+}
+
+
+.box_all span{
+	float:left;
+}
+
+
+
+#content_bj{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background: #000;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 1px;
+	opacity:0.18;
+	-moz-opacity: 0.18; 
+	-khtml-opacity: 0.18; 
+	filter:alpha(opacity=18);
+	z-index:-9999;
+}
+
+.denglu_all{
+	float:left;
+	width:100%;
+	height:147px;
+	line-height:147px;
+	text-align:center;
+	position:relative;
+	
+}
+.denglu_all_top{
+	margin-top:42px;
+}
+.denglu_all_bj{
+	position:absolute; 
+	width:100%;
+	height:100%;
+	background: #000;
+	opacity:0.3;
+	-moz-opacity: 0.3; 
+	-khtml-opacity: 0.3; 
+	filter:alpha(opacity=3);
+	z-index:-999999;
+	
+	
+}
+.denglu_all button{
+	background:none; 
+	border:none; 
+	width:118px; 
+	height:45px; 
+	background:url(../img/denglu.png) center no-repeat;
+	z-index:9999999;
+}	
+
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #fff; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #fff; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #fff; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #fff; 
+} 
+
+@media screen and (max-width: 1920px) {
+#pagewrap{
+	width:95%;
+	max-width:385px;
+	margin: 3.703703703703704% auto auto auto;
+}
+
+#titles{
+	width:100%;
+	height:100%;
+	line-height:100px;
+	max-height:100px;
+}
+
+#content{
+	width:100%;
+	height:481px;
+
+}
+
+#content_title{
+	width:100%;
+	height:65px;
+	line-height:65px;
+
+}
+
+.imgs img{
+	width:100%;
+	margin-top:10px;
+	max-width:24px;
+	max-height:24px;
+}
+.inputs{
+	
+	width:auto;
+	max-width:273px;
+	height:100%;
+}
+.box_all{
+	width:89.35064935064935%;
+	height:auto;
+	margin-left:20px;
+}
+
+/*.inputs input{
+
+	width:80.466472303207%;
+	max-width:276px;
+	width:auto;
+	height:100%;
+	
+}*/
+
+
+	}
+
+
+@media screen and (max-width: 768px) {
+#pagewrap{
+	width:95%;
+	min-width:300px;
+}	
+	}

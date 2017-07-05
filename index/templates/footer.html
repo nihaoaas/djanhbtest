@@ -1,0 +1,33 @@
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.ui.custom.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.uniform.js"></script>
+<script src="/static/js/select2.min.js"></script>
+<script src="/static/js/jquery.dataTables.min.js"></script>
+<script src="/static/js/side.js"></script>
+<script src="/static/js/unicorn.tables.js"></script>
+<script src="/static/js/ddsort.js"></script>
+<script>
+
+$("#sets").mouseover(
+		function(){
+			$(this).children("i").removeClass("imgpos1").addClass("imgpos1focus")
+			}
+	).mouseout(
+		function(){
+			$(this).children("i").removeClass("imgpos1focus").addClass("imgpos1")
+			}
+	)
+$("#logout").mouseover(
+		function(){
+			$(this).children("i").removeClass("imgpos2").addClass("imgpos2focus")
+			}
+	).mouseout(
+		function(){
+			$(this).children("i").removeClass("imgpos2focus").addClass("imgpos2")
+			}	
+	)	
+
+</script>
+</body>
+</html>

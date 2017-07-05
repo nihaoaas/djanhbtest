@@ -1,0 +1,127 @@
+</head>
+
+<body>
+<div id="header">
+	<h1>Hybroad Admin</h1>
+</div>
+
+<div id="user-nav">
+	<ul>
+    	<li class="Mright dropdown" id="menu-messages">
+        <a data-toggle="dropdown" data-target="#menu-messages" href="#"><img class="img-circle" src="/static/img/admin.jpg"></a>
+        			<ul class="dropdown-menu" style="margin-top:10px;">
+				<li><a id="sets" class="sAdd" title="" href="" ><i class="iimgs imgpos1"></i><span class="text">设置</span></a></li>
+				<li><a id="logout" title="" href="{:U('login/logout')}"><i class="iimgs imgpos2"></i> <span class="text">退出</span></a></li>
+			</ul>
+        </li>
+        <li class="Mtop">
+        	<p>Hello,Json</p>
+            <p><i>Administaror</i></p>
+        </li>
+    </ul>
+</div>
+<!--侧边栏 str-->
+<div id="sidebar">
+	
+    <div id="sidebar_icon"><img src="/static/img/right_angule.png"></div>
+     <ul>
+     <volist name="common" id="vo">
+     
+     <if condition="$vo eq 1">
+     <li><a href="{:U('Test/test_index')}"><span>测试</span></a></li>
+		 </if>
+       <!--测试项目管理--> 
+       <if condition="$vo eq 2">
+       		<li class="submenu">
+			<a href="javascript:;"><span>测试项目管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+				      <li><a href="{:U('Project/list_test_project')}">测试项目列表</a></li>
+              <li><a href="{:U('Project/add_test_project')}">添加测试项目</a></li>            
+            </ul>
+            </li>
+        </if>
+       <!--测试产品管理--> 
+       <if condition="$vo eq 3">
+       		<li class="submenu">
+			<a href="javascript:;"><span>测试产品管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+ 	            <li><a href="{:U('Product/list_test_product')}">测试产品列表</a></li>
+              <li><a href="{:U('Product/add_test_product')}">添加测试产品</a></li>           
+            </ul>
+            </li>  
+        </if>     
+       <!--测试计划管理--> 
+       <if condition="$vo eq 4">
+       		<li class="submenu">
+			<a href="javascript:;"><span>测试计划管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+ 				      <li><a href="{:U('Plan/list_test_plan')}">测试计划列表</a></li>
+              <li><a href="{:U('Plan/add_test_plan')}">添加测试计划</a></li>                 
+            </ul>
+            </li> 
+        </if>      
+       <!--测试项管理-->
+       <if condition="$vo eq 5">
+       		<li class="submenu">
+			<a href="javascript:;"><span>测试项管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+ 			        <li><a href="{:U('Item/list_test_item')}">测试项列表</a></li>
+              <li><a href="{:U('Item/add_test_item')}">添加测试项</a></li>           
+            </ul>
+            </li> 
+        </if>       
+       <!--测试单元管理-->
+       <if condition="$vo eq 6"> 
+       		<li class="submenu">
+			<a href="javascript:;"><span>测试单元管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+  				    <li><a href="{:U('Unit/list_test_unit')}">测试单元列表</a></li>
+              <li><a href="{:U('Unit/add_test_unit')}">添加测试单元</a></li>                
+            </ul>
+            </li> 
+        </if>      
+       <!--测试记录管理--> 
+       <if condition="$vo eq 7">
+        		<li class="submenu">
+			<a href="javascript:;"><span>测试记录管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+            <ul>
+  				    <li><a href="{:U('Record/list_record')}">测试记录列表</a></li>            
+            </ul>
+            </li>
+        </if>
+            <if condition="$vo eq 8">
+            <li class="submenu">
+      <a href="javascript:;"><span>权限管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+      <ul>
+        <li><a href="{:U('Auth/list_auth_cate')}">权限分类列表</a></li>
+        <li><a href="{:U('Auth/add_auth_cate')}">添加权限分类</a></li>
+        <li><a href="{:U('Auth/list_auth')}">权限列表</a></li>
+        <li><a href="{:U('Auth/add_auth')}">添加权限</a></li>
+      </ul>
+    </li>
+    </if>
+
+    <!--权限管理-->
+    <if condition="$vo eq 9">
+    <li class="submenu">
+      <a href="javascript:;"><span>用户管理</span> <span class="label"><img src="/static/img/plus.png"></span></a>
+      <ul>
+        <li><a href="{:U('User/list_user')}">用户列表</a></li>
+        <li><a href="{:U('User/add_user')}">添加用户</a></li>
+        <li><a href="{:U('User/list_user_group')}">用户组列表</a></li>
+        <li><a href="{:U('User/add_user_group')}">添加用户组</a></li>
+            
+      </ul>
+    </li>
+    </if>
+            
+        </volist> 
+        <if condition="$common[0] eq 1"> 
+        <li><a href="{:U('Setting/list_testing')}" target="_blank">正在进行的测试</a></li>
+        </if>
+        <!-- <li><a href="{:U('Lin/add_lin')}">添加测试网页</a></li>
+        <li><a href="{:U('Lin/list_lin')}">测试网页列表</a></li>  -->   
+    </ul>
+    
+</div>
+<!--侧边栏 end-->

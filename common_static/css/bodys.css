@@ -1,0 +1,171 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:url(../imgs/logoBj.png) no-repeat ;
+}
+
+#pagewrap{
+	width:385px;
+	margin: 0 auto;
+}
+
+#content{
+	float:left;
+	width:385px;
+	height: 521px;
+	position:relative;
+}
+
+#content_title{
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-size:2.5em;
+	margin-bottom:62px;
+	margin-top:156px;
+}
+
+#content_box{
+	width:100%;
+	height:100%;
+	border:1px solid #FFF;
+}
+
+#content_box_con{
+	position:absolute;
+	width:100%;
+	height:auto;
+	text-align:center;
+	z-index:9999;
+	
+}
+#content_box_con p{
+	color:#FFF;
+	margin-top:42px;
+	padding-bottom:10px;
+	font-size:2em;
+}
+
+#from_grop{
+	width:100%;
+	margin:0 auto;
+}
+
+#from_grop .box_all ,.remberpas{
+	margin-left:20px;
+	text-align:left;
+	}
+#from_grop .box_all {
+margin-bottom:25px;	
+}
+#from_grop .box_all .userpaswContent{
+	color:#FFF;
+	margin-bottom:14px;
+}
+
+#from_grop .box_all input{
+		border:none;
+	background:none;
+	text-indent:30px;
+	margin-left:66px;
+	width:280px;
+	height:46px;
+	color:#FFF;	
+	position:absolute;
+}
+
+.userpassall{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:66px;
+	height:43px;
+	border-right:#FFF solid 1px;
+	z-index:99999
+}
+.userpic{
+	background:url(imgs/user.png) no-repeat center;
+}
+.passpic{
+	background:url(imgs/lock.png) no-repeat center;
+}
+
+.boxbj_border{
+	width:345px;
+	height:44px;
+	border:#FFF 1px solid;
+    border-radius: 5px;
+	position:relative;
+	z-index:-9999999
+}
+
+.boxbj{
+	position:absolute;
+	width:345px;
+	height:44px;	
+	background: #000;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 5px;
+	opacity:0.18;
+	-moz-opacity: 0.18; 
+	-khtml-opacity: 0.18; 
+	filter:alpha(opacity=18)
+	z-index:-999999
+}
+.remberpas{
+
+}
+
+.remberpas span{
+	float:left;
+	color:#FFF;
+	font-size:1em;
+	margin-right:15px;
+	margin-top:10px;
+	margin-bottom:42px;	
+	}
+	
+.denglu_all{
+	float:left;
+	width:100%;
+	position:relative;
+	}	
+
+.denglu_all button{
+	position:absolute; 
+	left:131px; 
+	top:49px;
+	background:none; 
+	border:none; 
+	width:118px; 
+	height:45px; 
+	background:url(../imgs/denglu.png) center no-repeat; 
+	z-index:99
+}	
+.denglu_bj{
+	width:383px;
+	height:147px;
+	background:#000;
+	bottom:0px;
+	opacity:0.3;
+	-moz-opacity: 0.3; 
+	-khtml-opacity: 0.3; 
+	filter:alpha(opacity=30)	
+}
+#content_box_bj{
+	width:100%;
+    height:100%;
+	background: #000;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 1px;
+	opacity:0.18;
+	-moz-opacity: 0.18; 
+	-khtml-opacity: 0.18; 
+	filter:alpha(opacity=18)	
+}

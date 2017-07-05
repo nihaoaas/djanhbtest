@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from index import views as index_views
+from project import views as project_views
 
 urlpatterns = [
+	url(r'^list_test_project/',project_views.list_test_project,name='list_test_project'),
 	url(r'^$',index_views.index,name='index'),
+
     url(r'^admin/', admin.site.urls),
 ]

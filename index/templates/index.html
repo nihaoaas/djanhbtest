@@ -1,0 +1,74 @@
+{% include 'header.html'%}
+<style>
+table{
+	text-align:center;
+}
+
+table th{
+	background:#eaeaea;
+	text-align:center;
+	color:#666666;
+}
+
+.contetmartop{
+	margin-top:22px;
+}
+
+.suc{
+	padding-left:20px;
+	color:#36b250;
+}
+.fales{
+	padding-left:20px;
+	color:#ff0000;
+}
+
+#start{
+	width:225px;
+	height:221px;
+	margin-top:20%;
+	margin-bottom:20%;
+	
+	display:inline-block;
+}
+
+#start p{
+	width:225px;
+	margin-top:50px;
+	line-height:55px;	
+	text-align:center;
+	font-size:3em;
+	
+	font-weight:900;
+	text-shadow:2px 3px 2px #000;
+}
+
+#start a{
+	text-decoration:none;
+}
+
+</style>
+{% include 'sidbar.html' %}
+<!--主体内容 str-->
+<div id="content">
+<div id="sidebar_bj"></div>
+	<div id="content-header"></div>
+
+		<!---主体内容与-->
+        	<div class="container-fluid">
+					<div class="col-lg-12" style="text-align:center">
+    					<div id="start"><p>测试系统</p></div>
+
+                    </div>
+                                     
+                    
+                    <div class="row-fluid">
+                        <div id="footer" class="col-lg-12" style="text-align:center">
+                            2017 &copy; Hybroad Admin.  <a href="http://www.hybroad.com/">Hybraod Vision</a>
+                        </div>
+                    </div>
+             </div>       
+
+</div>
+<!--主体内容 end-->
+{% include 'footer.html' %}
